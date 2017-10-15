@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+
+  get 'portfolio/index'
+  post 'portfolio/top'
+  post 'portfolio/sample'
+  post 'portfolio/mail'
+  root to:"portfolio#index"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
