@@ -1,2 +1,38 @@
 <h1>Portfolio#index</h1>
-<p>Find me in app/views/portfolio/index.html.erb</p>
+
+<%
+#変数宣言
+    @index_story0_var = "コピペして使用"
+%>
+
+<%###########################%>
+<%#表示メソッド %>
+    <% def index_story0 %>
+        <% #コピペして使用 %>
+    <% end %>
+    
+    <% def index_story1 %>
+        <%= form_tag( { action: :top }, { remote: true } ) do %>
+        　　<%= submit_tag :top %>
+        <% end %>
+        <%= form_tag( { action: :sample }, { remote: true } ) do %>
+        　　<%= submit_tag :sample %>
+        <% end %>
+        <%= form_tag( { action: :mail }, { remote: true } ) do %>
+        　　<%= submit_tag :mail %>
+        <% end %>
+    <% end %>
+    
+    <% def index_story2 %>
+        <fieldset>
+            <div id='divjserb'>
+              <%= render partial: "top" %>
+            </div>
+        </fieldset>
+    <% end %>
+<%########################## %>
+
+<%#表示部分 %>
+    <% index_story1 %>
+    <% index_story2 %>
+<%########################## %>
