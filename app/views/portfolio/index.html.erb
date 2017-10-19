@@ -1,4 +1,9 @@
-<h1>Portfolio#index</h1>
+<div class="card-panel teal lighten-2">
+    <span class="white-text">
+        <h1>Portfolio#index</h1>
+    </span>
+</div>
+
 
 <%
 #変数宣言
@@ -14,6 +19,7 @@
     <% def index_story1 %>
         <%= form_tag( { action: :top }, { remote: true } ) do %>
         　　<%= submit_tag :top %>
+        　　<%= submit_tag :sample %>
         <% end %>
         <%= form_tag( { action: :sample }, { remote: true } ) do %>
         　　<%= submit_tag :sample %>
