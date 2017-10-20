@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.7'
 gem 'jquery-ui-rails'
 gem 'materialize-sass'
+gem 'slim'
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
 # Use SCSS for stylesheets
