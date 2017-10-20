@@ -42,3 +42,15 @@
         <a href="#!" class="collection-item">Alvin</a>
         <a href="#!" class="collection-item">Alvin</a>
       </div>
+      
+      
+<%= form_tag( { action: :mail }, { remote: true } ) do %>
+    <%= text_field_tag :tom %>
+    <%= text_area_tag :tomo %>
+    <%= label_tag%>
+    <%= password_field_tag  %>
+    <%= file_field_tag :okok %>
+    <%= url_field_tag :okok %>
+    <%= telephone_field_tag :okok %>
+    <%= check_box_tag :okok %>
+<% end %>

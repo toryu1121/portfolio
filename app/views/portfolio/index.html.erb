@@ -17,9 +17,10 @@
     <% end %>
     
     <% def index_story1 %>
+    <div style="display:inline-flex">
         <%= form_tag( { action: :top }, { remote: true } ) do %>
         　　<%= submit_tag :top %>
-        　　<%= submit_tag :sample %>
+
         <% end %>
         <%= form_tag( { action: :sample }, { remote: true } ) do %>
         　　<%= submit_tag :sample %>
@@ -27,6 +28,7 @@
         <%= form_tag( { action: :mail }, { remote: true } ) do %>
         　　<%= submit_tag :mail %>
         <% end %>
+    </div>
     <% end %>
     
     <% def index_story2 %>
