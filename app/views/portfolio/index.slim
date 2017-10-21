@@ -1,16 +1,17 @@
+
 .card-panel.teal.lighten-2
-  span.white-text
-    h1 Portfolio#index
+    span.white-text
+      h1 Portfolio#index
+    = render partial: "sidenav"
+  
+
   
 div[style="display:inline-flex"]
   = form_tag( { action: :top }, { remote: true } ) do
-    |  　　
     = submit_tag :top
   = form_tag( { action: :sample }, { remote: true } ) do
-    |  　　
     = submit_tag :sample
   = form_tag( { action: :mail }, { remote: true } ) do
-    |  　　
     = submit_tag :mail
 
 fieldset
